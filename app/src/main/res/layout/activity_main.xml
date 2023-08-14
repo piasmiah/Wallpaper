@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frage_container"
         android:layout_width="match_parent"
         android:layout_above="@+id/bottom_nav"
         android:layout_height="match_parent"/>
@@ -18,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="labeled"
         android:background="@color/white"
         />
-
 </RelativeLayout>

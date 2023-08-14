@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:title="Developer"
+        android:icon="@drawable/developer_icon"
+        android:id="@+id/nav_developer"/>
+
+    <item android:title="Share"
+        android:icon="@drawable/share_icon"
+        android:id="@+id/nav_share"/>
+
+    <item android:title="Rate Us"
+        android:icon="@drawable/rate_icon"
+        android:id="@+id/nav_rate"/>
+
+    <item android:title="Privacy Policy"
+        android:icon="@drawable/policy_icon"
+        android:id="@+id/nav_policy"/>
+
+    <item android:title="Our Apps"
+        android:icon="@drawable/apps_icon"
+        android:id="@+id/nav_apps"/>
+
 </menu>

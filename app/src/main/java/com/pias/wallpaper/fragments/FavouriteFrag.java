@@ -15,9 +15,7 @@ public class FavouriteFrag extends Fragment {
     View layout;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         layout= inflater.inflate(R.layout.fragment_favourite, container, false);
 
         return layout;
