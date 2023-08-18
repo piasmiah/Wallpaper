@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.FavouriteFrag">
+    tools:context=".activity.WallpaperDetails">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycle_favorite_view"
+        android:id="@+id/recycle_wallpaperDetails"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_favourite"
-        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-        app:spanCount="2"/>
-
+        tools:listitem="@layout/item_wallpaper_details"/>
 
 </RelativeLayout>

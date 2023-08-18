@@ -1,6 +1,7 @@
 package com.pias.wallpaper.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.pias.wallpaper.R;
+import com.pias.wallpaper.activity.CategoryDetails;
 import com.pias.wallpaper.model.Category;
 import com.pias.wallpaper.model.Wallpapers;
 
@@ -42,13 +44,18 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         holder.title.setText(category.getTitle());
 
         Glide.with(context)
-                .load(Category.getCover())
+                .load(category.getCover())
                 .error(R.drawable.cover)
                 .placeholder(R.drawable.cover)
                 .skipMemoryCache(true)
                 .into(holder.cover);
 
         holder.itemView.setOnClickListener(v->{
+            Intent intent= new Intent(context, CategoryDetails.class);
+            intent.putExtra("id", category.getId());
+            intent.putExtra("title", category.getTitle());
+            context.startActivity(intent);
+
 
         });
 

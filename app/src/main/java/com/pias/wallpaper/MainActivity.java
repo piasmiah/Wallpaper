@@ -14,6 +14,8 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 import com.pias.wallpaper.fragments.CategoryFrag;
 import com.pias.wallpaper.fragments.FavouriteFrag;
 import com.pias.wallpaper.fragments.HomeFrag;
@@ -38,6 +40,20 @@ public class MainActivity extends AppCompatActivity {
 
         setSidebar();
         setBottom();
+
+//        Dexter.withContext(this)
+//                .withPermissions(
+//                        Manifest.permission.CAMERA,
+//                        Manifest.permission.READ_CONTACTS,
+//                        Manifest.permission.RECORD_AUDIO
+//                ).withListener(new MultiplePermissionsListener() {
+//                    @Override public void onPermissionsChecked(MultiplePermissionsReport report) {
+//
+//                    }
+//                    @Override public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
+//
+//                    }
+//                }).check();
     }
 
     private void setBottom(){

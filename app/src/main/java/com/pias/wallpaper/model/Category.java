@@ -18,7 +18,7 @@ public class Category  {
         return title;
     }
 
-    public static String getCover() {
+    public String getCover() {
         return cover;
     }
 }

@@ -8,7 +8,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/item_wallpaper_img"
+        android:id="@+id/item_favorite_img"
         android:src="@drawable/cover"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

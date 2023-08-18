@@ -9,7 +9,7 @@ public class Wallpapers {
         this.category = category;
     }
 
-    public static String getUrl() {
+    public String getUrl() {
         return url;
     }
 

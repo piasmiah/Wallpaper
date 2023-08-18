@@ -8,11 +8,19 @@ android {
 
     defaultConfig {
         applicationId "com.pias.wallpaper"
-        minSdk 24
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
-
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += [
+                        "room.schemaLocation":"$projectDir/schemas".toString(),
+                        "room.incremental":"true",
+                        "room.expandProjection":"true"
+                ]
+            }
+        }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -40,5 +48,16 @@ dependencies {
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.15.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+    //Volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+    def room_version = "2.5.2"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    //Storage Permission
+    implementation 'com.karumi:dexter:6.2.3'
+
 
 }
