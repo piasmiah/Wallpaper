@@ -51,8 +51,4 @@
         android:text="@string/sixth_heading"
         android:textColor="@color/black"/>
     </LinearLayout>
-
-
-
-
 </ScrollView>

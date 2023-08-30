@@ -129,16 +129,23 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()){
                     case R.id.nav_developer:
-
+                        Toast.makeText(MainActivity.this, "Developer", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.nav_share:
+                        Toast.makeText(MainActivity.this, "Share", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.nav_rate:
+                        Toast.makeText(MainActivity.this, "Rate Us", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.nav_policy:
                         startActivity(new Intent(MainActivity.this, PrivacyPolicy.class));
+                        Toast.makeText(MainActivity.this, "Privacy Policy", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_contact:
+                        Toast.makeText(MainActivity.this, "Contact With Us", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.nav_apps:
+                        Toast.makeText(MainActivity.this, "Our Apps", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 if (drawerLayout.isDrawerOpen(GravityCompat.START)){

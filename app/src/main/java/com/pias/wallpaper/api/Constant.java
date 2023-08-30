@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Constant {
 
-    public static String base= "http://192.168.43.108/wallpaper/api/";
+    public static String base= "http://192.168.0.157/wallpaper/api/";
     public static String home= base+ "home.php";
     public static String latest=base+ "latest.php";
     public static String category=base+ "category.php";

@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Developer"
-        android:icon="@drawable/developer_icon"
-        android:id="@+id/nav_developer"/>
+    <group android:checkableBehavior="single">
+        <item android:title="Developer"
+            android:icon="@drawable/developer_icon"
+            android:id="@+id/nav_developer"/>
 
-    <item android:title="Share"
-        android:icon="@drawable/share_icon"
-        android:id="@+id/nav_share"/>
+        <item android:title="Share"
+            android:icon="@drawable/share_icon"
+            android:id="@+id/nav_share"/>
 
-    <item android:title="Rate Us"
-        android:icon="@drawable/rate_icon"
-        android:id="@+id/nav_rate"/>
+        <item android:title="Rate Us"
+            android:icon="@drawable/rate_icon"
+            android:id="@+id/nav_rate"/>
 
-    <item android:title="Privacy Policy"
-        android:icon="@drawable/policy_icon"
-        android:id="@+id/nav_policy"/>
+        <item android:title="Privacy Policy"
+            android:icon="@drawable/policy_icon"
+            android:id="@+id/nav_policy"/>
+    </group>
 
-    <item android:title="Our Apps"
-        android:icon="@drawable/apps_icon"
-        android:id="@+id/nav_apps"/>
+   <group android:checkableBehavior="single">
+       <item android:title="Contact Us">
+           <menu>
+               <item android:title="Contact With Us"
+                   android:icon="@drawable/icon_contact"
+                   android:id="@+id/nav_contact"/>
+
+               <item android:title="Our Apps"
+                   android:icon="@drawable/apps_icon"
+                   android:id="@+id/nav_apps"/>
+           </menu>
+       </item>
+
+
+   </group>
 
 </menu>
